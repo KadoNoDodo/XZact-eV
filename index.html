@@ -6,33 +6,6 @@
   <title>XZact! e.V.</title>
   <link href="./style.css" rel="stylesheet">
   <link href="./output.css" rel="stylesheet">
-</head>
-<body class="h-screen w-screen relative bg-violet-950">
-  <!-- Top-left Triangle -->
-  <a href="home.html" class="triangle absolute top-0 left-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] clip-triangle-tl bg-cover bg-center overflow-hidden" style="background-image: url('./img/house.jpg');">
-  </a>
-
-  <!-- Top-right Triangle -->
-  <a href="abart.html" class="triangle absolute top-0 right-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] bg-cover bg-center clip-triangle-tr overflow-hidden" style="background-image: url('./img/art.jpg');">
-  </a>
-
-  <!-- Bottom-right Triangle -->
-  <a href="donate.html" class="triangle absolute bottom-0 right-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] bg-cover bg-center clip-triangle-br overflow-hidden" style="background-image: url('./img/donate.jpg');">
-  </a>
-
-  <!-- Bottom-left Triangle -->
-  <a href="garden.html" class="triangle absolute bottom-0 left-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] bg-cover bg-center clip-triangle-bl overflow-hidden" style="background-image: url('./img/flower.jpg');">
-  </a>
-
-  <!-- Central Content -->
-  <div class="flex flex-col items-center justify-center h-full px-4">
-    <h1 class="text-amber-400 text-2xl md:text-4xl font-bold mb-8 font-serif text-center">Hi!</h1>
-    <h1 class="text-amber-400 text-2xl md:text-4xl font-bold mb-8 font-serif text-center">We are XZact! e.V.</h1>
-
-    <div class="flex flex-col md:flex-row justify-center items-center gap-4 w-full max-w-4xl">
-    </div>
-  </div>
-
   <style>
     .clip-triangle-tl {
       clip-path: polygon(0 0, 100% 0, 0 100%);
@@ -46,6 +19,53 @@
     .clip-triangle-bl {
       clip-path: polygon(0 100%, 0 0, 100% 100%);
     }
+
+    .triangle {
+      position: absolute;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
+
+    .tooltip {
+      position: absolute;
+      background: #2F1640;
+      color: #F1CF73;
+      padding: 5px 10px;
+      font-size: 1rem;
+      border-radius: 2px;
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .triangle:hover + .tooltip {
+      opacity: 1;
+    }
   </style>
+</head>
+<body class="h-screen w-screen relative bg-violet-950">
+  <!-- Top-left Triangle -->
+  <a href="home.html" class="triangle top-0 left-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] clip-triangle-tl" style="background-image: url('./img/house.jpg');"></a>
+  <div class="tooltip" style="top: 10%; left: 25%;">Home</div>
+
+  <!-- Top-right Triangle -->
+  <a href="abart.html" class="triangle top-0 right-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] clip-triangle-tr" style="background-image: url('./img/art.jpg');"></a>
+  <div class="tooltip" style="top: 10%; right: 25%;">AbArt</div>
+
+  <!-- Bottom-right Triangle -->
+  <a href="donate.html" class="triangle bottom-0 right-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] clip-triangle-br" style="background-image: url('./img/donate.jpg');"></a>
+  <div class="tooltip" style="bottom: 10%; right: 25%;">Donate</div>
+
+  <!-- Bottom-left Triangle -->
+  <a href="garden.html" class="triangle bottom-0 left-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] clip-triangle-bl" style="background-image: url('./img/flower.jpg');"></a>
+  <div class="tooltip" style="bottom: 10%; left: 25%;">Garden</div>
+
+  <!-- Central Content -->
+  <div class="flex flex-col items-center justify-center h-full px-4">
+    <h1 class="text-amber-400 text-2xl md:text-4xl font-bold mb-8 font-serif text-center">Hi!</h1>
+    <h1 class="text-amber-400 text-2xl md:text-4xl font-bold mb-8 font-serif text-center">We are XZact! e.V.</h1>
+  </div>
 </body>
 </html>
