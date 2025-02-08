@@ -9,19 +9,19 @@
 </head>
 <body class="h-screen w-screen relative bg-violet-950">
   <!-- Top-left Triangle -->
-  <a href="home.html" class="triangle absolute top-0 left-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] bg-gradient-to-br from-fuchsia-900 to-violet-900 clip-triangle-tl flex items-center justify-center">
+  <a href="home.html" class="triangle absolute top-0 left-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] clip-triangle-tl bg-cover bg-center overflow-hidden" style="background-image: url('./img/house.jpg');">
   </a>
 
   <!-- Top-right Triangle -->
-  <a href="abart.html" class="triangle absolute top-0 right-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] bg-linear-to-bl from-fuchsia-900 to-violet-900 clip-triangle-tr flex items-end justify-end">
+  <a href="abart.html" class="triangle absolute top-0 right-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] bg-cover bg-center clip-triangle-tr overflow-hidden" style="background-image: url('./img/art.jpg');">
   </a>
 
   <!-- Bottom-right Triangle -->
-  <a href="donate.html" class="triangle absolute bottom-0 right-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] bg-linear-to-br from-violet-900 to-fuchsia-900 clip-triangle-br">
+  <a href="donate.html" class="triangle absolute bottom-0 right-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] bg-cover bg-center clip-triangle-br overflow-hidden" style="background-image: url('./img/donate.jpg');">
   </a>
 
   <!-- Bottom-left Triangle -->
-  <a href="garden.html" class="triangle absolute bottom-0 left-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] bg-linear-to-bl from-violet-900 to-fuchsia-900 bg-cover bg-center clip-triangle-bl flex items-start justify-start">
+  <a href="garden.html" class="triangle absolute bottom-0 left-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] bg-cover bg-center clip-triangle-bl overflow-hidden" style="background-image: url('./img/flower.jpg');">
   </a>
 
   <!-- Central Content -->
@@ -32,6 +32,7 @@
     <div class="flex flex-col md:flex-row justify-center items-center gap-4 w-full max-w-4xl">
     </div>
   </div>
+
   <style>
     .clip-triangle-tl {
       clip-path: polygon(0 0, 100% 0, 0 100%);
