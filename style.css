@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+.icon {
+    width: clamp(2vw, 5vw, 8vw);
+    height: clamp(2vw, 5vw, 8vw);
+    fill: rgb(236, 170, 55);
+  }

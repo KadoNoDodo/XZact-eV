@@ -4,33 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>XZact! e.V.</title>
-  <link href="style.css" rel="stylesheet">
-  <link href="output.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-900">
-  <header class="bg-blue-500 text-white p-4">
-    <ul class="flex justify-items-end justify-between">
-        <li>
-        Home
-        </li>
-        <li>
-          AbArt
-            </li>
-            <li>
-              Garden
-                </li>
-                <li>
-                  Donate
-                    </li>
-    </ul>
-  </header>
-  <main class="p-8">
-    <h1 class="text-3xl font-bold">Hi! We're XZact! e.V.</h1>
-    <p>Learn more about us on this page.</p>
-  </main>
-  
-  <footer class="bg-gray-800 text-white p-4 mt-8">
-    <p class="text-center">© 2025 XZact! e.V. All rights reserved.</p>
-  </footer>
+<body class="h-screen w-screen relative bg-violet-950">
+  <!-- Top-left Triangle -->
+  <a href="home.html" class="triangle absolute top-0 left-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] bg-gradient-to-br from-fuchsia-900 to-violet-900 clip-triangle-tl flex items-center justify-center">
+  </a>
+
+  <!-- Top-right Triangle -->
+  <a href="abart.html" class="triangle absolute top-0 right-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] bg-linear-to-bl from-fuchsia-900 to-violet-900 clip-triangle-tr flex items-end justify-end">
+  </a>
+
+  <!-- Bottom-right Triangle -->
+  <a href="donate.html" class="triangle absolute bottom-0 right-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] bg-linear-to-br from-violet-900 to-fuchsia-900 clip-triangle-br">
+  </a>
+
+  <!-- Bottom-left Triangle -->
+  <a href="garden.html" class="triangle absolute bottom-0 left-0 w-[20vw] h-[20vw] lg:w-[25vw] lg:h-[25vw] bg-linear-to-bl from-violet-900 to-fuchsia-900 bg-cover bg-center clip-triangle-bl flex items-start justify-start">
+  </a>
+
+  <!-- Central Content -->
+  <div class="flex flex-col items-center justify-center h-full px-4">
+    <h1 class="text-amber-400 text-2xl md:text-4xl font-bold mb-8 font-serif text-center">Hi!</h1>
+    <h1 class="text-amber-400 text-2xl md:text-4xl font-bold mb-8 font-serif text-center">We are XZact! e.V.</h1>
+
+    <div class="flex flex-col md:flex-row justify-center items-center gap-4 w-full max-w-4xl">
+    </div>
+  </div>
+  <style>
+    .clip-triangle-tl {
+      clip-path: polygon(0 0, 100% 0, 0 100%);
+    }
+    .clip-triangle-tr {
+      clip-path: polygon(100% 0, 100% 100%, 0 0);
+    }
+    .clip-triangle-br {
+      clip-path: polygon(100% 100%, 0 100%, 100% 0);
+    }
+    .clip-triangle-bl {
+      clip-path: polygon(0 100%, 0 0, 100% 100%);
+    }
+  </style>
 </body>
 </html>
